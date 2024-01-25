@@ -1,6 +1,12 @@
 # Terraform - Infraestructura Multi-Tier con MongoDB
 Este repositorio contiene código de Terraform para implementar una infraestructura multi-tier en la nube utilizando servicios de AWS. La infraestructura consta de tres instancias EC2:
 
+### Instrucciones
+- Contar con las variables de ambiente AWS_ACCESS_KEY_ID y AWS_SECRET_ACCESS_KEY para poder autentificarse hacia AWS.
+- terraform plan -> verificar los recursos que se crearan
+- terraform apply -auto-approve -> para empezar con la ejecucion y creacion de los recursos establecidos en main.tf
+- terraform destroy -auto-approve -> para destruir los recursos generados en AWS una vez que ya no se ocupen.
+
 ### MongoDB:
 
 Una instancia dedicada que actúa como servidor de la base de datos MongoDB.
